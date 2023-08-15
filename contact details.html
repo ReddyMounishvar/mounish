@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            contact details
+        </title>
+        <style type="text/css">
+             input[type=text]{
+                padding: 12px;
+                border: 1px solid #efc9af;
+                border-radius: 4px;
+                border-color: brown;
+                color: rgb(248, 38, 38);
+                font-weight: bold;
+             } 
+             ::placeholder{
+                color: lightslategray;
+             }
+             body{
+                background-color: blanchedalmond;
+                border-color: #efc9af;
+             }
+             legend{
+                color: red;
+                animation: color 5s infinite;
+             }
+             h1{
+                color: blue;
+                text-align: center;
+             }
+             @keyframes color{
+                0%{color:deeppink}
+                30%{color:rgb(86, 45, 64)}
+                50%{color:rgb(21, 2, 2)}
+                70%{ color:orange}
+                90%{ color:coral}
+                100%{color:green}
+            }
+            fieldset{
+                background-color: aqua;
+            }
+            div{
+                font-size: 22px;
+                
+            }
+            div :hover{
+                background-color: rgb(228, 35, 25);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="submit.html">
+            <h1>CONTACT DETAILS</h1>
+        <fieldset>
+            <legend> <h2>PERSONAL_DETAILS</h2></legend>
+             <label for="fname">FIRSTNAME </label>
+             <input type="text" placeholder="Ex: raja" required id="fname" pattern="[a-zA-Z]{4,10}">
+             <br><br>
+             <label for="lname">LASTNAME</label>
+             <input type="text" placeholder="Ex: ram" required id="lname"  pattern="[a-zA-Z]{4,10}">
+             <br><br>
+             <label for="email">EMAIL_ID</label>
+             <input type="email" placeholder="Ex: ram@gmail.com" required id="email">
+             <br><br>
+             <label for="response">HELP_DESK</label>
+             <input type="text"placeholder="Ex: type your response" required id="response"> 
+        </fieldset> 
+        <div>
+    <input type="submit">
+</div>
+</form>
+    </body> 
+</html>
